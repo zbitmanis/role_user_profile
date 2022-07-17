@@ -1,0 +1,33 @@
+---
+- name: "ensure bash profile directory exists"
+  file:
+    mode: 0750
+    path: "{{ user_profile_bash_profile_folder }}"
+    state: "directory"
+
+- name: "copy bash profile files"
+  copy:
+    mode: 0750
+    src: "bash/{{ item.name }}"
+    dest: "{{ user_profile_bash_profile_folder }}/{{ item.name }}"
+  when: 'item.state == "present"'
+  loop: "{{ user_profile_bash_files }}"
+
+- name: "clean up profile files"
+  file:
+    mode: 0750
+    path: "{{ user_profile_bash_profile_folder }}/{{ item.name }}"
+    state: absent
+  when: 'item.state == "absent"'
+  loop: "{{ user_profile_bash_files }}"
+
+- name: "add ansible marker"
+  lineinfile:
+    line: "#### Ansible managed context for profile"
+    path: "{{ user_profile_bash_profile_file }}"
+
+- name: "add  sourcing profile subfolder command"
+  lineinfile:
+    insertafter: "#### Ansible managed context for profile"
+    line: for _F in $(ls {{ user_profile_bash_profile_folder }}/*.sh); do [[ -f ${_F} && -r ${_F} ]] && . $_F; done
+    path: "{{ user_profile_bash_profile_file }}"

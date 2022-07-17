@@ -1,0 +1,5 @@
+---
+- name: 'popoulate vim rc settings'
+  template:
+    src: vim/vim.rc.j2 
+    dest: '{{ user_profile_vim_profile_file }}' 

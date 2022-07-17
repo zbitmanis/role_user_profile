@@ -1,0 +1,5 @@
+---
+- name: remove annoying bell set inpurc
+  copy:
+    content: set bell-style none
+    dest: "{{ user_profile_inputrc_file }}"

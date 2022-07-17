@@ -1,0 +1,106 @@
+{
+  "bracket-pair-colorizer-2.showBracketsInGutter": true,
+  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+  "commentAnchors.workspace.excludeFiles": "**/{.git,.idea,target,out,build,vendor}/**/*",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.autoIndent": "advanced",
+  "editor.cursorStyle": "line",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  },
+  "editor.fontFamily": "Consolas",
+  "editor.fontLigatures": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "on",
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "trailing",
+  "editor.suggestSelection": "first",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "on",
+  "editor.wrappingIndent": "deepIndent",
+  "editor.wrappingStrategy": "simple",
+  "emmet.triggerExpansionOnTab": true,
+  "files.autoSave": "off",
+  "git.alwaysShowStagedChangesResourceGroup": true,
+  "javascript.preferences.quoteStyle": "double",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "keyboard.dispatch": "keyCode",
+  "material-icon-theme.folders.color": "#90a4ae",
+  "prettier.printWidth": 100,
+  "scm.alwaysShowActions": true,
+  "terminal.integrated.defaultProfile.osx": "bash",
+  "terminal.integrated.fontWeightBold": "bold",
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontFamily": "monospace",
+  "terminal.external.osxExec": "iTerm.app",
+  "thunder-client.codeSnippetLanguage": "cs-httpclient",
+  "typescript.preferences.quoteStyle": "double",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescriptHero.imports.stringQuoteStyle": "\"",
+  "vim.easymotion": true,
+  "vim.easymotionMarkerBackgroundColor": "#d1cdcd11",
+  "vim.highlightedyank.duration": 500,
+  "vim.highlightedyank.enable": true,
+  "vim.sneak": true,
+  "vim.statusBarColorControl": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<ESC>"
+      ]
+    }
+  ],
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.nativeFullScreen": false,
+  "window.restoreFullscreen": true,
+  "window.zoomLevel": 1,
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.toggleCommentAndLineDown",
+      "sequence": [
+        "editor.action.commentLine",
+        "cursorDown"
+      ]
+    },
+  ],
+  "bracket-pair-colorizer-2.colors": [
+    "#feda6a",
+    "#FFA500",
+    "#ec7f37",
+    "#fa625f",
+  ],
+  "cSpell.userWords": [],
+  "workbench.colorTheme": "Monokai Light",
+  "workbench.activityBar.visible": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorCustomizations": {
+    "window.activeBorder": "#0a1e1711",
+    "activityBar.activeBorder": "#FFA500",
+    "activityBarBadge.background": "#ff0000",
+    "editor.findMatchBackground": "#e29300c4",
+    "statusBar.background": "#007acc",
+    "statusBar.noFolderBackground": "#007acc",
+    "statusBar.debuggingBackground": "#007acc"
+  },
+  "redhat.telemetry.enabled": true,
+}

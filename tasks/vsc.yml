@@ -1,0 +1,5 @@
+---
+- name: copy vsc settings
+  copy:
+    src: "vsc/settings.json"
+    dest: "{{ user_profile_vsc_settings_file }}"

@@ -1,0 +1,15 @@
+- name: "prepare bash profile"
+  include: bash.yml
+  when: user_profile_install.bashrc
+
+- name: "prepare vimrc"
+  include: vim.yml
+  when: user_profile_install.vimrc
+
+- name: "prepare inputrc"
+  include: inputrc.yml
+  when: user_profile_install.inputrc
+
+- name: "prepare visual studio code"
+  include: vsc.yml
+  when: user_profile_install.vsc
