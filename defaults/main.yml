@@ -25,6 +25,9 @@ user_profile_bash_files:
     state: present
   - name: misc.sh
     state: present
+  - name: macosx.sh
+    state: '{{ "present" if ansible_distribution == "MacOSX" else "absent" }}'
+
 user_profile_owner: "{{ ansible_user }}"
 
 user_profile_vim_rc_settings:
