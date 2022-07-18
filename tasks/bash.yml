@@ -23,11 +23,11 @@
 
 - name: "add ansible marker"
   lineinfile:
-    line: "#### Ansible managed context for profile"
+    line: "#### Ansible managed profile content"
     path: "{{ user_profile_bash_profile_file }}"
 
 - name: "add  sourcing profile subfolder command"
   lineinfile:
-    insertafter: "#### Ansible managed context for profile"
+    insertafter: "#### Ansible managed profile content"
     line: for _F in $(ls {{ user_profile_bash_profile_folder }}/*.sh); do [[ -f ${_F} && -r ${_F} ]] && . $_F; done
     path: "{{ user_profile_bash_profile_file }}"
