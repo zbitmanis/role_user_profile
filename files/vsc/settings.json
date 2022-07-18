@@ -10,18 +10,18 @@
   },
   "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.formatOnSaveMode": "file"
   },
   "[terraform-vars]": {
     "editor.defaultFormatter": "hashicorp.terraform",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.formatOnSaveMode": "file"
   },
   "editor.fontFamily": "Consolas",
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.lineNumbers": "on",
   "editor.minimap.enabled": false,
   "editor.mouseWheelZoom": true,
@@ -36,7 +36,7 @@
   "emmet.triggerExpansionOnTab": true,
   "files.autoSave": "off",
   "git.alwaysShowStagedChangesResourceGroup": true,
-  "javascript.preferences.quoteStyle": "double",
+  "javascript.preferences.quoteStyle": "single",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "keyboard.dispatch": "keyCode",
   "material-icon-theme.folders.color": "#90a4ae",
