@@ -3,3 +3,10 @@
   template:
     src: vim/vim.rc.j2 
     dest: '{{ user_profile_vim_profile_file }}' 
+
+- name: "create vim internal folders"
+  file:
+    mode: 0700
+    path: "{{ item }}"
+    state: directory
+  loop: "{{ user_profile_vim_internal_folders }}"
